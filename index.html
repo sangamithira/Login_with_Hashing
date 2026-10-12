@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="login-card">
+        <div class="brand">
+          <div class="brand-badge">S</div>
+          <h1>Secure Login</h1>
+        </div>
+
+        <p class="subtitle">
+          Passwords are stored with a unique salt and hashed before saving.
+        </p>
+
+        <form id="login-form" novalidate>
+          <div class="field-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Enter username" required />
+          </div>
+
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter password" required />
+          </div>
+
+          <button type="submit" class="primary-btn">Login</button>
+        </form>
+
+        <button id="demo-user-btn" type="button" class="secondary-btn">
+          Use demo account
+        </button>
+
+        <div id="message" class="message" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
